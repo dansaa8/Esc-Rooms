@@ -8,25 +8,24 @@
 }
 
 p {
-    font-weight: 400; /* Kanske?*/
+  font-weight: 400;
+  /* Kanske?*/
 }
 
-
 button {
-    background-color: transparent;
-    border-width: 0;
-    font-family: inherit;
-    font-size: inherit;
-    font-style: inherit;
-    font-weight: inherit;
-    line-height: inherit;
-    padding: 0;
-    display: block;
-    border-radius: 4px;
+  background-color: transparent;
+  border-width: 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  padding: 0;
+  display: block;
+  border-radius: 4px;
 }
 
 body {
-
 }
 
 header {
@@ -47,12 +46,44 @@ h1 {
   max-width: 78px;
 }
 
+nav {
+  margin-left: auto;
+  margin-bottom: auto;
+}
+
+/* turn on burger-menu on mobile units */
+.burger {
+
+}
+
+.burger__Stripe {
+  width: 51px;
+  height: 6px;
+  background-color: black;
+  margin: 8px 0;
+  background-color: #ffffff;
+  border-radius: 5px;
+  list-style: none;
+}
+
+/* will only be shown with media screen at a certain px*/
+.desktopMenu {
+  display: none;
+}
+
 .logo {
   max-width: 130px;
   margin-right: 10px;
 }
 
-.quoteBox {
+@media screen and (min-width: 720px) {
+   .burger {
+    display: none;
+    visibility: none;
+  }
+}
+
+/* .quoteBox {
     margin-left: 21px;
     margin-right: 20px;
     max-width: 410px;
@@ -80,13 +111,13 @@ q {
     background-color: #8ACFE6;
     padding: 19px 53px 19px 52px;
     margin-bottom: 30;
-}
+} */
 
 /* ändra styling vid desktop läge*/
-.btnOnline { 
+/* .btnOnline { 
     margin: auto;
     padding: 30px 43px 30px 42px;
     margin-bottom: 30;
     font-size: 16px;
     color: #36769D;
-}
+} */
