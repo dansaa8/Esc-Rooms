@@ -1,0 +1,92 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Roboto";
+  font-size: 24px;
+  box-sizing: border-box;
+  font-weight: 700;
+}
+
+p {
+    font-weight: 400; /* Kanske?*/
+}
+
+
+button {
+    background-color: transparent;
+    border-width: 0;
+    font-family: inherit;
+    font-size: inherit;
+    font-style: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    padding: 0;
+    display: block;
+    border-radius: 4px;
+}
+
+body {
+
+}
+
+header {
+  background-color: #011827;
+  color: #ffffff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 22px 23px 34px 24px;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+h1 {
+  max-width: 78px;
+}
+
+.logo {
+  max-width: 130px;
+  margin-right: 10px;
+}
+
+.quoteBox {
+    margin-left: 21px;
+    margin-right: 20px;
+    max-width: 410px;
+    margin: auto;
+}   
+
+.quoteBox__portrait {
+    max-width: 73.34px;
+    float: left;
+    display: block;
+}
+
+q {
+    display: block;
+    float: left;
+    max-width: 300px;
+}
+
+.btnPair {
+    margin-top: 37px;
+}
+
+.btnOnSite {
+    margin: auto;
+    background-color: #8ACFE6;
+    padding: 19px 53px 19px 52px;
+    margin-bottom: 30;
+}
+
+/* ändra styling vid desktop läge*/
+.btnOnline { 
+    margin: auto;
+    padding: 30px 43px 30px 42px;
+    margin-bottom: 30;
+    font-size: 16px;
+    color: #36769D;
+}
