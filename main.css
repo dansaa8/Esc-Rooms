@@ -7,11 +7,17 @@
   font-weight: 700;
 }
 
+html, body { height: 100%;}
+
 p {
   font-weight: 400;
   /* Kanske?*/
 }
 
+img {
+  display: block;
+  width: 100%;
+}
 button {
   background-color: transparent;
   border-width: 0;
@@ -25,24 +31,22 @@ button {
   border-radius: 4px;
 }
 
-body {
-}
 
-header {
+.header {
   background-color: #011827;
   color: #ffffff;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   padding: 22px 23px 34px 24px;
 }
 
-img {
-  display: block;
-  width: 100%;
+.header__logo {
+  max-width: 130px;
+  margin-right: 10px;
 }
 
-h1 {
+.header__h1 {
   max-width: 78px;
 }
 
@@ -66,22 +70,40 @@ nav {
   list-style: none;
 }
 
+
 /* will only be shown with media screen at a certain px*/
 .desktopMenu {
   display: none;
+  grid-row: 2;
 }
 
-.logo {
-  max-width: 130px;
-  margin-right: 10px;
-}
-
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 600px) {
    .burger {
     display: none;
     visibility: none;
   }
+
+  .header {
+    height: 216px;
+  }
+
+  .header__h1 {
+    max-width: 100%;
+    font-size: 40px;
+    margin-top: 40px;
+  }
 }
+
+.aside1 { height: 100vh;}
+
+.aside1__largeImg {
+  background-image: url('/imgMob/img1_mob.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+  
+
 
 /* .quoteBox {
     margin-left: 21px;
