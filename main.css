@@ -5,13 +5,12 @@
   font-size: 24px;
   box-sizing: border-box;
   font-weight: 700;
-  overflow: hidden;
   position: relative;;
 }
 
-html,
-body {
-
+small {
+  font-size: 18px;
+  font-weight: 400;
 }
 
 
@@ -19,6 +18,15 @@ p {
   font-weight: 400;
   /* Kanske?*/
 }
+
+q {
+  font-weight:400;
+  display: inline;
+  text-decoration: none;
+  font-style: italic;
+}
+
+q:before, q:after{ content: "";}
 
 img {
   display: block;
@@ -46,6 +54,7 @@ button {
 .linebreak {
   width: 100%;
 }
+
 
 /* header */
 .header {
@@ -84,6 +93,7 @@ button {
   display: none;
 }
 
+
 /* section1 */
 .section1 {
 }
@@ -102,6 +112,7 @@ button {
 
 }
 
+
 .btnOnSite {
   margin: auto;
   background-color: #8ACFE6;
@@ -114,16 +125,55 @@ button {
 }
 
 .btnOnline {
-    margin: auto;
-    padding: 30px 43px 30px 42px;
-    margin-bottom: 30;
-    font-size: 16px;
-    color: #36769D;
-    text-decoration-line: underline;
-    position: relative;
+  margin: auto;
+  padding: 30px 43px 30px 42px;
+  margin-bottom: 30;
+  font-size: 16px;
+  color: #36769D;
+  text-decoration-line: underline;
+  position: relative;
 }
 
 
+/* section 2*/
+.section2{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  gap: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 110px;
+}
+
+.section2__quoteBox {
+  max-width: 522px;
+}
+
+.section2__quoteBox__quoteFace {
+  max-height: 96px;
+  max-width: 96px;
+  float: left;
+  margin-right: 17px;
+}
+
+.section2__quoteBox__quote {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section2__quoteBox__quote q {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.section2__quoteBox:nth-child(2){
+display: none;
+}
+
+
+/* section 3 */
 
 @media screen and (min-width: 750px) {
 
@@ -156,7 +206,7 @@ button {
     padding-bottom: 22px;
   }
 
-  
+
   /* section 1 */ 
   .section1__img {
     overflow: hidden;
@@ -191,6 +241,16 @@ button {
   }
 
 
+  /* section 2 */
+  .section2__quoteBox:nth-child(2){
+    display:block;
+    }
+
+    .section2__quoteBox__quote q {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
 }
 
 
