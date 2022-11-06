@@ -292,9 +292,38 @@ margin: 12px 38px 0px 17px;
   background-color: #011827;
   /* margin-top: 26px; */
   display: flex;
-  align-items: center;
   flex-wrap: wrap;
-  justify-content: centerz;
+  justify-content: center;
+  align-content: center;
+  gap: 50px;
+}
+
+
+.section4__storyBox__text {
+  width: 100%;
+  text-align: center;
+}
+
+.section4__storyBox__text p{
+  max-width: 632px;
+  margin: auto;
+  font-size: 28px;
+  color: white;
+  font-weight: 400;
+}
+
+.section4__storyBox__anchorReadFullStory {
+  color: #36769D;
+  position: relative;
+  width: 308px;
+  height: 66px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #8ACFE6;
+  border-radius: 4px;
+  
 }
 
 @media screen and (min-width: 750px) {
