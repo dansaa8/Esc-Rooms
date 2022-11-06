@@ -14,10 +14,6 @@ small {
 }
 
 
-p {
-  font-weight: 400;
-  /* Kanske?*/
-}
 
 q {
   font-weight:400;
@@ -98,7 +94,7 @@ button {
 .section1 {
 }
 .section1__img {
- max-height: 468px;
+  max-height: 468px;
 }
 
 .section1__img__mobile {
@@ -143,7 +139,6 @@ button {
   gap: 50px;
   margin-left: 20px;
   margin-right: 20px;
-  margin-bottom: 110px;
 }
 
 .section2__quoteBox {
@@ -173,7 +168,88 @@ display: none;
 }
 
 
+.preSection3__h2 {
+  margin: auto;
+  text-align: center;
+  max-width: 464px;
+  max-height: 42px;
+  font-weight: 400;
+  font-size: 32px;
+  size: 36px;
+  margin-top: 105px;
+  
+}
 /* section 3 */
+.section3 {
+  display: flex;
+  margin-top: 44px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 0;
+}
+
+
+.section3__imgBox { 
+  width: 363px;
+  height: 446px;
+  /* display: flex;
+  flex-wrap: wrap; */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+  position: relative;
+  padding: 18px;
+  flex: 0 0 auto;
+}
+
+.section3__imgBox__img {
+  margin-bottom: 10px;
+}
+
+.section3__imgBox__h3 {
+  font-size: 28px;
+  font-weight: 400;
+  width: 308px;
+  height: 33px; 
+  margin-bottom: 4px;
+}
+
+.section3__imgBox__lineOfStars {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 5px;
+  gap: 5px;
+}
+
+.fa-star {
+  color: #E3170A;
+}
+
+.section3__imgBox__lineOfStars__smallTxt {
+  font-size: 14px;
+  font-weight: 400px;
+  left: 12px;
+}
+
+.section3__imgBox__p {
+  width: 328px;
+  height: 80px;
+  font-size: 18px;
+  font-weight: 400;
+
+}
+
+.section3__imgBox__btnBookRoom {
+  background-color: #E3170A;
+  color: white;
+  font-size: 16px;
+  width: 180px;
+  height: 44px;
+  /* float: right; */
+  margin-left: auto;
+  position: absolute;
+  bottom: 12px;
+  right: 18px;
+}
 
 @media screen and (min-width: 750px) {
 
@@ -251,7 +327,19 @@ display: none;
       flex-wrap: wrap;
       margin-bottom: 20px;
     }
+
 }
 
+@media screen and (min-width: 1100px){
+      /* section 3*/
+      .section3 {
+        flex-wrap: wrap;
+        overflow: auto;
+        justify-content: center;
+      }
 
-/* .quoteBox {
+      .section3__imgBox__lineOfStars__smallTxt {
+        margin-left: auto;
+        margin-right: 11px;
+      }
+}
