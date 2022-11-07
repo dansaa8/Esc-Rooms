@@ -326,6 +326,51 @@ margin: 12px 38px 0px 17px;
   
 }
 
+
+/* section5 */
+.section5__boxOneAndTwo__img__desktopImg {
+  display: none;
+}
+
+.section5__boxThreeAndFour__img__desktopImg {
+  display: none;
+}
+
+.section5__infoBox {
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 440px;
+}
+
+.section5__infoBox h2 {
+  font-size: 32px;
+  font-weight: 700px;
+  margin-top: 30px;
+}
+
+.section5__infoBox p {
+  font-size: 24px;
+  font-weight: 400px;
+  margin-top: 25px;
+}
+
+.section5__anchorBookOnSite {
+  background-color: #E3170A;
+  color: white;
+  width: 308px;
+  height: 66px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: auto;
+}
+
 @media screen and (min-width: 750px) {
 
   /* header */
@@ -410,22 +455,68 @@ margin: 12px 38px 0px 17px;
 
 
     /* section 4 */
-    .section4 {
-      
-    }
     .section4__anchors {
       display: flex;
       justify-content: center;
       flex-direction: row-reverse;
-      gap: 17px;
+      gap: 17px;  
       margin-top: 87px; 
       margin-bottom: 87px;
     }
 
 }
 
+@media screen and (min-width: 1000px){
+    /* section 5 */
+    .section5__boxOneAndTwo__img__mobileImg {
+      display: none;
+    }
+    
+
+    .section5__boxThreeAndFour__img__mobileImg {
+      display: none;
+    }
+    
+    .section5__boxOneAndTwo__img__desktopImg {
+      visibility: visible;
+      display: block;
+      width: 100%;
+    }
+    
+    .section5__boxThreeAndFour__img__desktopImg {
+      visibility: visible;
+      display: block;
+      width: 100%;
+    }
+
+    .section5__boxOneAndTwo {
+      display: flex;
+    }
+
+    .section5__infoBox {
+      width: 50%;
+      margin-top: 40px;
+    }
+    .section5__infoBox {
+
+    }
+    .section5__boxOneAndTwo__img {
+      width: 50%;
+    }
+
+    .section5__anchorBookOnSite {
+      margin: 0;
+      margin-top:25px
+    }
+
+    .section5__infoBox {
+      max-width: 416px;
+    }
+
+  }
+
 @media screen and (min-width: 1280px){
-      /* section 3*/
+      /* section 3 */
       .section3 {
         flex-wrap: wrap;
         overflow: auto;
