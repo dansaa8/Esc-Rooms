@@ -340,14 +340,18 @@ margin: 12px 38px 0px 17px;
   margin: auto;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  max-width: 440px;
+  align-content: center;
+  justify-content: flex-start;
+  flex-basis: 440px;
+  margin: 30px;
 }
+
 
 .section5__infoBox h2 {
   font-size: 32px;
   font-weight: 700px;
-  margin-top: 30px;
+  /* margin-top: 30px; */
+  margin: 0;
 }
 
 .section5__infoBox p {
@@ -477,7 +481,7 @@ margin: 12px 38px 0px 17px;
       display: none;
     }
     
-    .section5__boxOneAndTwo__img__desktopImg {
+    .section5__boxOneAndTwo__img__desktopImg, .section5__boxThreeAndFour__img__desktopImg {
       visibility: visible;
       display: block;
       width: 100%;
@@ -489,30 +493,30 @@ margin: 12px 38px 0px 17px;
       width: 100%;
     }
 
-    .section5__boxOneAndTwo {
+    .section5__boxOneAndTwo, .section5__boxThreeAndFour  {
       display: flex;
     }
 
+    .section5__boxThreeAndFour  {
+      flex-direction: row-reverse;
+    }
+
+
     .section5__infoBox {
       width: 50%;
-      margin-top: 40px;
+      align-content: center;
+      margin: auto;
     }
-    .section5__infoBox {
 
-    }
-    .section5__boxOneAndTwo__img {
+    .section5__boxOneAndTwo__img, .section5__boxThreeAndFour__img {
       width: 50%;
     }
 
     .section5__anchorBookOnSite {
       margin: 0;
-      margin-top:25px
+      margin-top:25px;
+      margin-right: auto;
     }
-
-    .section5__infoBox {
-      max-width: 416px;
-    }
-
   }
 
 @media screen and (min-width: 1280px){
