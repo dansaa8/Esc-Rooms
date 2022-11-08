@@ -202,6 +202,8 @@ display: none;
   gap: 38px;
   padding-left: 53px;
   padding-right: 54px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 
@@ -214,7 +216,14 @@ display: none;
   display: flex;
   align-content: flex-start;
   flex-wrap: wrap;
+  border-radius: 8px 8px 0px 0px;
 }
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+
 
 .section3__imgBox__img {
 
@@ -373,6 +382,11 @@ margin: 12px 38px 0px 17px;
   margin-top: 50px;
   margin-bottom: 50px;
   margin-right: auto;
+}
+
+.footer {
+  background-color: #011827;
+  
 }
 
 @media screen and (min-width: 750px) {
