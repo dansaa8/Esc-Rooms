@@ -78,7 +78,7 @@ button {
   margin-left: auto;
 }
 
-.header__menu__mobile {
+.header__menu__mobileBtn {
   background-color: transparent;
   border-width: 0
 }
@@ -438,7 +438,7 @@ margin: 12px 38px 0px 17px;
     padding-right: 50px;
   }
 
-  .header__menu__mobile {
+  .header__menu__mobileBtn {
     display: none;
   }
 
