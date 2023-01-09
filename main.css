@@ -95,6 +95,7 @@ button {
   .header__nav {
     background-color: rgba(white, 0);
     transition: 0.5s;
+    width: 100%;
   }
 
   .header__nav.open {
@@ -102,7 +103,7 @@ button {
     background-color: rgba(255, 255, 255, 0.5);
     position: fixed;
     z-index: 900;
-
+    
     top: 0px;
     right: 0px;
     bottom: 0px;
@@ -110,13 +111,20 @@ button {
 
   }
 
-
+  
+  .header__mobileBtn {
+    background-color: transparent;
+    display: block;
+    border-width: 0;
+    margin-left: auto;
+    bottom: 75px;
+    z-index: 3000;
+  }
 
   .header__mobileBtn.open {
-    position: fixed;
-    float: right;
-    left: 570px;
-    z-index: 3000;
+    bottom: 0px;
+    top: 25px;
+    right: 25px;
   }
 
   .burger__stripe:first-child.open {
@@ -171,12 +179,6 @@ button {
   }
 
 
-  .header__mobileBtn {
-    background-color: transparent;
-    border-width: 0;
-    margin-left: auto;
-    z-index: 1001;
-  }
 
   .burger__stripe {
     width: 51px;
@@ -551,9 +553,6 @@ button {
     display: block;
   }
 
-  .header__menu__mobileBtn {
-    display: none;
-  }
 
   .header__menu__desktop {
     display: flex;
