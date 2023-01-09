@@ -111,6 +111,13 @@ button {
   }
 
 
+
+  .header__mobileBtn.open {
+    position: fixed;
+    float: right;
+    left: 570px;
+  }
+
   .burger__stripe:first-child.open {
     transform: rotate(45deg);
     top: 20px;

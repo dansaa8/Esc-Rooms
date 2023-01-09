@@ -5,10 +5,12 @@ btn.addEventListener('click', (ev) => {
     menu.classList.toggle('open');
     const burgerStripes = document.querySelectorAll('.burger__stripe');
     if (menu.classList.contains('open')) {
+        btn.classList.add('open');
         burgerStripes.forEach((stripe) => {
             stripe.classList.add('open');
         })
-    } else if (!menu.classList.contains('open')) { 
+    } else if (!menu.classList.contains('open')) {
+        btn.classList.remove('open');
             burgerStripes.forEach((stripe) => {
                 stripe.classList.remove('open');
             })
