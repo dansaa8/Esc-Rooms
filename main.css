@@ -116,6 +116,7 @@ button {
     position: fixed;
     float: right;
     left: 570px;
+    z-index: 3000;
   }
 
   .burger__stripe:first-child.open {
