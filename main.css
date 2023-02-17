@@ -96,6 +96,7 @@ button {
     background-color: rgba(white, 0);
     transition: 0.5s;
     width: 100%;
+    height: 0px;
   }
 
   .header__nav.open {
@@ -103,11 +104,13 @@ button {
     background-color: rgba(255, 255, 255, 0.5);
     position: fixed;
     z-index: 900;
+    height: auto;
     
     top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
+    transition: 0s;
 
   }
 
@@ -129,12 +132,12 @@ button {
 
   .burger__stripe:first-child.open {
     transform: rotate(45deg);
-    top: 20px;
+    top: 38px;
   }
 
   .burger__stripe:nth-child(2).open {
     transform: rotate(-45deg);
-    top: 6.5px;
+    top: 24.5px;
   }
 
   .burger__stripe:nth-child(3).open {
